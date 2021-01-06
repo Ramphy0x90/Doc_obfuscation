@@ -6,5 +6,4 @@ Small project in Python for replacement of traditional Latin characters in Cyril
 
 ```bash
 pip3 install python-docx
-pip3 install pypdf2
 ```
