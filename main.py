@@ -103,8 +103,8 @@ if __name__ == '__main__':
 
                 document2 = docx.Document(new_document_name)
 
-                print('[*] Document name: {}'.format(userArguments[1]))
-                print('[*] Paragraph number: {}'.format(len(document2.paragraphs)))
+                print('{} Document name: {}'.format(refer_red, colored(userArguments[1], 'blue')))
+                print('{} Paragraph number: {}'.format(refer_red, colored(len(document2.paragraphs), 'blue')))
 
                 total_changed_chars = 0
 
@@ -115,8 +115,8 @@ if __name__ == '__main__':
 
                 document2.save(new_document_name)
 
-                print('[*] Letters replaced: {}'.format(total_changed_chars))
-                print('[*] New obfuscated file: {}'.format(new_document_name))
+                print('{} Letters replaced: {}'.format(refer_red, colored(total_changed_chars, 'blue')))
+                print('{} New obfuscated file: {}'.format(refer_red, colored(new_document_name, 'blue')))
 
             except docx.opc.exceptions.PackageNotFoundError:
                 print('\n[!] Document not found')
